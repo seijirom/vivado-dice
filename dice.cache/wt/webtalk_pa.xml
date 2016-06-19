@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sun Jun 19 00:02:00 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="1466d8a8c256494d91fb2a002ae4d613" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="NewProject" value="2" type="JavaHandler"/>
+<property name="SimulationRun" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
+<property name="NEXT, Next " value="14" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, dice.v" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 0, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 1, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 2, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 3, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 3, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 4, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; output ; false ; 0 ; 0, 4, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, clk, 0, Port Name, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 0, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 3, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 2, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 3, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 4, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, sw, 1, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, x ; input ; false ; 0 ; 0, 2, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, x, 2, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, y ; input ; false ; 0 ; 0, 3, input, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, y, 3, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, z, 4, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ON_THE_WEB, Vivado on the Web..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, dice (dice.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_DESIGN_HUBS, Design Hubs" value="5" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FLOW, Flow" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_HELP, Help" value="8" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_SIMULATION, Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="5" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_VIEW, View" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_WINDOW, Window" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, dice" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_CONFIGURABLE_IP_FILES, Add Files" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_SIMULATOR_LANGUAGE, Verilog, 1" value="1" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_ADD_ELEMENT, Add Definition" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="RDIResource.PropertiesView_NEXT_OBJECT, Properties_forward" value="1" type="GuiResourceData"/>
+<property name="RDIResource.PropertiesView_PREVIOUS_OBJECT, Properties_backward" value="2" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

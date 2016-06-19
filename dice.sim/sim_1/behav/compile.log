@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tmp/dice/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tmp/dice/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tmp/dice/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
