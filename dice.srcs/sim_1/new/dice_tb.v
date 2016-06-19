@@ -33,7 +33,7 @@ dice u1 (
 initial begin
     reset = 1;
     clock = 1;
-    #50000 $finish;
+    #150000 $finish;
 end
 always #5000
     clock <= ~clock;

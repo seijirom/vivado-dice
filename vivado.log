@@ -1,0 +1,616 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Jun 19 21:28:51 2016
+# Process ID: 1949
+# Current directory: /home/anagix/ALBDATA/vivado/dice_HEAD
+# Command line: vivado
+# Log file: /home/anagix/ALBDATA/vivado/dice_HEAD/vivado.log
+# Journal file: /home/anagix/ALBDATA/vivado/dice_HEAD/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/anagix/ALBDATA/vivado/dice_HEAD/dice.xpr
+INFO: [Project 1-313] Project file moved from '/tmp/dice' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 5871.207 ; gain = 78.570 ; free physical = 246 ; free virtual = 6986
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d1db5f6af980441d9dd6c4b65a29001a --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dice_tb_behav xil_defaultlib.dice_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dice
+Compiling module xil_defaultlib.dice_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dice_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xsim.dir/dice_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 19 21:30:39 2016...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 5875.207 ; gain = 0.004 ; free physical = 574 ; free virtual = 6994
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dice_tb_behav -key {Behavioral:sim_1:Functional:dice_tb} -tclbatch {dice_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source dice_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 5927.023 ; gain = 42.578 ; free physical = 536 ; free virtual = 6984
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dice_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 5927.023 ; gain = 53.816 ; free physical = 536 ; free virtual = 6984
+run all
+$finish called at time : 50 us : File "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" Line 36
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:01:33 ; elapsed = 00:01:31 . Memory (MB): peak = 5982.691 ; gain = 25.609 ; free physical = 215 ; free virtual = 6950
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d1db5f6af980441d9dd6c4b65a29001a --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dice_tb_behav xil_defaultlib.dice_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dice
+Compiling module xil_defaultlib.dice_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dice_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xsim.dir/dice_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 19 21:40:23 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dice_tb_behav -key {Behavioral:sim_1:Functional:dice_tb} -tclbatch {dice_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source dice_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dice_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 5982.695 ; gain = 0.000 ; free physical = 1241 ; free virtual = 6972
+run all
+$finish called at time : 50 us : File "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" Line 36
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 5982.695 ; gain = 0.000 ; free physical = 690 ; free virtual = 6939
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+ERROR: [VRFC 10-1412] syntax error near xb [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:46]
+ERROR: [VRFC 10-1412] syntax error near xc [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:47]
+ERROR: [VRFC 10-1412] syntax error near xd [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:48]
+ERROR: [VRFC 10-1412] syntax error near xe [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:49]
+ERROR: [VRFC 10-1412] syntax error near xf [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:50]
+ERROR: [VRFC 10-1412] syntax error near x [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:51]
+ERROR: [VRFC 10-1412] syntax error near ya [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:52]
+ERROR: [VRFC 10-1412] syntax error near yb [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:53]
+ERROR: [VRFC 10-1412] syntax error near yc [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:54]
+ERROR: [VRFC 10-1412] syntax error near yd [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:55]
+ERROR: [VRFC 10-1412] syntax error near ye [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:56]
+ERROR: [VRFC 10-1412] syntax error near yf [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:57]
+ERROR: [VRFC 10-1412] syntax error near yg [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:58]
+ERROR: [VRFC 10-1412] syntax error near yh [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:59]
+ERROR: [VRFC 10-1412] syntax error near y [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:60]
+ERROR: [VRFC 10-1412] syntax error near za [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:61]
+ERROR: [VRFC 10-1412] syntax error near zb [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:62]
+ERROR: [VRFC 10-1412] syntax error near zc [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:63]
+ERROR: [VRFC 10-1412] syntax error near zd [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:64]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+ERROR: [VRFC 10-1412] syntax error near end [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:73]
+ERROR: [VRFC 10-1040] module dice ignored due to previous errors [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+ERROR: [VRFC 10-1412] syntax error near end [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:65]
+ERROR: [VRFC 10-1040] module dice ignored due to previous errors [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xb is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:38]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xb is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:38]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xc is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:39]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xc is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:39]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xd is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:40]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xd is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:40]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xe is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:41]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xe is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:41]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xf is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register xf is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ya is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ya is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register yb is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register yb is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register yc is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register yc is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register yd is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register yd is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ye is not permitted, left-hand side should be reg/integer/time/genvar [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:48]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d1db5f6af980441d9dd6c4b65a29001a --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dice_tb_behav xil_defaultlib.dice_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dice
+Compiling module xil_defaultlib.dice_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dice_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xsim.dir/dice_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 20 00:22:38 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dice_tb_behav -key {Behavioral:sim_1:Functional:dice_tb} -tclbatch {dice_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source dice_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dice_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 5982.695 ; gain = 0.000 ; free physical = 721 ; free virtual = 6889
+run all
+$finish called at time : 50 us : File "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" Line 36
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+ERROR: [VRFC 10-1412] syntax error near wire [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:31]
+ERROR: [VRFC 10-91] xa is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:35]
+ERROR: [VRFC 10-91] xb is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:36]
+ERROR: [VRFC 10-91] xc is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:37]
+ERROR: [VRFC 10-91] xd is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:38]
+ERROR: [VRFC 10-91] xe is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:39]
+ERROR: [VRFC 10-91] xf is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:40]
+ERROR: [VRFC 10-91] ya is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:41]
+ERROR: [VRFC 10-91] yb is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:42]
+ERROR: [VRFC 10-91] yc is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:43]
+ERROR: [VRFC 10-91] yd is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:44]
+ERROR: [VRFC 10-91] ye is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:45]
+ERROR: [VRFC 10-91] yf is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:46]
+ERROR: [VRFC 10-91] yg is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:47]
+ERROR: [VRFC 10-91] yh is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:48]
+ERROR: [VRFC 10-91] za is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:49]
+ERROR: [VRFC 10-91] zb is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:50]
+ERROR: [VRFC 10-91] zc is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:51]
+ERROR: [VRFC 10-91] zd is not declared [/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v:52]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d1db5f6af980441d9dd6c4b65a29001a --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dice_tb_behav xil_defaultlib.dice_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dice
+Compiling module xil_defaultlib.dice_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dice_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xsim.dir/dice_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 20 00:28:37 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dice_tb_behav -key {Behavioral:sim_1:Functional:dice_tb} -tclbatch {dice_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source dice_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dice_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 5985.105 ; gain = 0.000 ; free physical = 706 ; free virtual = 6881
+run all
+$finish called at time : 50 us : File "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" Line 36
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d1db5f6af980441d9dd6c4b65a29001a --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dice_tb_behav xil_defaultlib.dice_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dice
+Compiling module xil_defaultlib.dice_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dice_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xsim.dir/dice_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 20 00:32:32 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dice_tb_behav -key {Behavioral:sim_1:Functional:dice_tb} -tclbatch {dice_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source dice_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dice_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 5985.105 ; gain = 0.000 ; free physical = 702 ; free virtual = 6878
+run all
+$finish called at time : 50 us : File "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" Line 36
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d1db5f6af980441d9dd6c4b65a29001a --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dice_tb_behav xil_defaultlib.dice_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dice
+Compiling module xil_defaultlib.dice_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dice_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xsim.dir/dice_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 20 00:35:15 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dice_tb_behav -key {Behavioral:sim_1:Functional:dice_tb} -tclbatch {dice_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source dice_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dice_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 5985.105 ; gain = 0.000 ; free physical = 721 ; free virtual = 6898
+run all
+$finish called at time : 50 us : File "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" Line 36
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'dice_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+xvlog -m64 --relax -prj dice_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sources_1/new/dice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dice_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.2/bin/unwrapped/lnx64.o/xelab -wto d1db5f6af980441d9dd6c4b65a29001a --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dice_tb_behav xil_defaultlib.dice_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dice
+Compiling module xil_defaultlib.dice_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dice_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav/xsim.dir/dice_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 20 00:36:41 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/anagix/ALBDATA/vivado/dice_HEAD/dice.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dice_tb_behav -key {Behavioral:sim_1:Functional:dice_tb} -tclbatch {dice_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source dice_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dice_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 5985.105 ; gain = 0.000 ; free physical = 716 ; free virtual = 6892
+run all
+$finish called at time : 150 us : File "/home/anagix/ALBDATA/vivado/dice_HEAD/dice.srcs/sim_1/new/dice_tb.v" Line 36

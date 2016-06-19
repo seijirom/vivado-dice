@@ -1,0 +1,2 @@
+FileUtils.rm_f 'dice.sim/sim_1/behav/webtalk_8377.backup.jou'
+FileUtils.rm_f 'dice.sim/sim_1/behav/webtalk_8377.backup.log'
